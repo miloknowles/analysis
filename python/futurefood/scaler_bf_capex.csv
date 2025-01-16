@@ -1,0 +1,20 @@
+Category,Item,Cost_Low_M,Cost_High_M,Percentage
+Equipment,Purchased Equipment,66,95,24.0
+Construction Directs,Piping,27,38,9.9
+Construction Directs,Buildings,44,63,16.0
+Construction Directs,Civil / Foundations,11,15,4.0
+Construction Directs,Steel,5.4,7.7,2.0
+Construction Directs,Instrumentation,21,31,7.9
+Construction Directs,Electrical,16,23,5.9
+Construction Directs,Insulation,2.7,3.8,1.0
+Construction Directs,Paint,2.7,3.8,1.0
+Construction Directs,Total,130,186,48.0
+Indirects,Construction Indirects,19,27,6.9
+Engineering,Engineering & Procurement,27,39,10.0
+Engineering,Construction Management,5.4,7.7,2.0
+Engineering,Total,32,46,12.0
+Other,Start-Up Commissioning,2.7,3.8,1.0
+Other,Freight/Sales Tax,8,12,3.0
+Summary,Subtotal,258,369,95.0
+Summary,Contract Fee + G&A Overheads,13,19,4.9
+Summary,Total,271,389,100.0

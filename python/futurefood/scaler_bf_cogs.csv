@@ -1,0 +1,23 @@
+Category,Item,Cost_Low,Cost_High,Percentage
+Variable COGS,Feedstock,1.02,1.47,37.0
+Variable COGS,Base,0.20,0.29,7.2
+Variable COGS,Electricity,0.14,0.21,5.2
+Variable COGS,Bulk Media Total,0.12,0.17,4.2
+Variable COGS,Wastewater,0.08,0.11,2.8
+Variable COGS,Natural Gas,0.07,0.11,2.7
+Variable COGS,Lab Consumables,0.07,0.10,2.5
+Variable COGS,SG&A,0.07,0.10,2.5
+Variable COGS,Caustic,0.03,0.05,1.2
+Variable COGS,Minor Media Components,0.02,0.03,0.8
+Variable COGS,Feed Water,0.01,0.01,0.2
+Variable COGS,Total,1.84,2.63,66.0
+Fixed COGS,Labor,0.11,0.16,4.0
+Fixed COGS,O&M,0.08,0.12,2.9
+Fixed COGS,Real Estate Tax,0.05,0.08,1.9
+Fixed COGS,Insurance,0.03,0.04,1.0
+Fixed COGS,Total,0.27,0.39,9.8
+Capital Service,Debt Service,0.04,0.14,2.3
+Capital Service,Project Equity Distributions,0.61,1.65,22.0
+Capital Service,Total,0.65,1.79,24.0
+Summary,Direct Cost,2.11,3.02,76.0
+Summary,Cost of Goods Sold,2.76,4.81,100.0
