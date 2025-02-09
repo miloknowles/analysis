@@ -8,6 +8,7 @@ numpy = "*"
 matplotlib = "*"
 seaborn = "*"
 jupyter = "*"
+pydantic = "*"
 
 [dev-packages]
 
