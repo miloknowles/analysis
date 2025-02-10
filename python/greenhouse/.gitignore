@@ -1,0 +1,3 @@
+ghcn-hourly*
+ghcn_hourly_data
+*.parquet

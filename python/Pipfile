@@ -9,6 +9,8 @@ matplotlib = "*"
 seaborn = "*"
 jupyter = "*"
 pydantic = "*"
+fastparquet = "*"
+pyarrow = "*"
 
 [dev-packages]
 
