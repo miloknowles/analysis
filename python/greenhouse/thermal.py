@@ -15,7 +15,6 @@ class Params(BaseModel):
   thermal_mass: float    # J/m²·K
   glazing_transmittance: float  # fraction of solar radiation transmitted
   latitude: float        # degrees
-  orientation: float     # degrees from south
 
 
 def calculate_solar_radiation(
@@ -213,7 +212,6 @@ if __name__ == "__main__":
     thermal_mass=100000,    # J/m²·K
     glazing_transmittance=0.8,  # fraction
     latitude=40,            # degrees North
-    orientation=0           # degrees from South
   )
   
   # Example winter day temperatures

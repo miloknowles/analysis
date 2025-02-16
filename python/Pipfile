@@ -11,6 +11,10 @@ jupyter = "*"
 pydantic = "*"
 fastparquet = "*"
 pyarrow = "*"
+geopandas = "*"
+scipy = "*"
+folium = "*"
+cartopy = "*"
 
 [dev-packages]
 
