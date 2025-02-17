@@ -77,6 +77,9 @@ def calculate_solar_radiation(
 
 def calculate_conduction(u_value: float, delta_t: float) -> float:
   """Calculate conduction heat transfer.
+
+  This is positive when the inside is warmer than the outside, so
+  a positive flux goes from the inside to the outside.
   
   Args:
     u_value: float - The U-value of the greenhouse
@@ -90,6 +93,11 @@ def calculate_conduction(u_value: float, delta_t: float) -> float:
 
 def calculate_infiltration(height: float, infiltration_rate: float,  delta_t: float) -> float:
   """Calculate infiltration heat transfer.
+
+  This is positive when the inside is warmer than the outside, so
+  a positive flux goes from the inside to the outside.
+
+  Positive infiltration means cooling.
   
   Args:
     height: float - The height of the greenhouse
@@ -159,7 +167,7 @@ def calculate_hourly_energy(
     hour
   )
   
-  # Net energy
+  # Net power
   total_heat_transfer_w_m2 = (
     conduction_heat_transfer_w_m2 + 
     infiltration_heat_transfer_w_m2 - 
