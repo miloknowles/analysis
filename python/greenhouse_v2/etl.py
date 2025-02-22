@@ -99,6 +99,24 @@ def calculate_monthly_hourly_means(filename: str, output_filename: str):
   ds.close()
 
 
+def merge_monthly_hourly_files(merge_files: list[str]):
+  """Merge the monthly hourly files into a single file."""
+  if len(merge_files) != 12:
+    raise ValueError(f"Expected 12 files, got {len(merge_files)}")
+
+  # Concatenate the files:
+  datasets = []
+
+  # Open each file and add to list
+  for file in merge_files:
+    ds = xr.open_dataset(file)
+    datasets.append(ds)
+      
+  # Concatenate along the 'month' dimension
+  # Note: Make sure each file has a 'month' coordinate that's unique
+  return xr.concat(datasets, dim='month')
+
+
 if __name__ == "__main__":
   ### TEMPERATURE AND SOLAR RADIATION ###
   # Unzip all files in the directory
@@ -109,7 +127,14 @@ if __name__ == "__main__":
   # rename_nc_files_month_year("./data/era5/d2m")
 
   # Calculate the monthly hourly means
-  d2m_files = glob.glob("./data/era5/d2m/*.nc")
-  for input_filename in d2m_files:
-    output_filename = input_filename.replace(".nc", "_hourly_means.nc")
-    calculate_monthly_hourly_means(input_filename, output_filename)
+  # d2m_files = glob.glob("./data/era5/d2m/*.nc")
+  # for input_filename in d2m_files:
+  #   output_filename = input_filename.replace(".nc", "_hourly_means.nc")
+  #   calculate_monthly_hourly_means(input_filename, output_filename)
+
+  ### MERGE MONTHLY HOURLY FILES ###
+  merge_files = glob.glob("./data/era5/d2m/*_hourly_means.nc")
+  print(f"Found {len(merge_files)} files to merge")
+  merged_data = merge_monthly_hourly_files(merge_files)
+  merged_data.to_netcdf("./data/era5/d2m/complete_month_hour_data_2023.nc")
+  print("DONE")
