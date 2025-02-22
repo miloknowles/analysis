@@ -18,6 +18,7 @@ cartopy = "*"
 xarray = "*"
 netcdf4 = "*"
 dask = "*"
+regionmask = "*"
 
 [dev-packages]
 
