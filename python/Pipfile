@@ -15,6 +15,9 @@ geopandas = "*"
 scipy = "*"
 folium = "*"
 cartopy = "*"
+xarray = "*"
+netcdf4 = "*"
+dask = "*"
 
 [dev-packages]
 
