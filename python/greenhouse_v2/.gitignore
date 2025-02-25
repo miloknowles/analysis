@@ -1,0 +1,10 @@
+data/
+outputs/
+*.csv
+*.json
+*.pkl
+*.parquet
+*.pickle
+*.pickle.gz
+*.nc
+*.zip

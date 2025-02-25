@@ -8,6 +8,17 @@ numpy = "*"
 matplotlib = "*"
 seaborn = "*"
 jupyter = "*"
+pydantic = "*"
+fastparquet = "*"
+pyarrow = "*"
+geopandas = "*"
+scipy = "*"
+folium = "*"
+cartopy = "*"
+xarray = "*"
+netcdf4 = "*"
+dask = "*"
+regionmask = "*"
 
 [dev-packages]
 
